@@ -12,7 +12,8 @@ const btnActions = {
     "+" : ()=> plus(),
     "-" : ()=> minus(),
     "/" : ()=> division(),
-    "x" : ()=> multiply()
+    "x" : ()=> multiply(),
+    "&bnsc" : ()=> clearLast()
 }
 
 const inputClear = () => {
@@ -37,6 +38,13 @@ const division = ()=> {
 }
 const multiply = ()=> {
     inputText.value += '*'
+}
+const clearLast = () => {
+    let lastIndex =  inputText.value[ inputText.value.length - 1 ];
+
+    inputText.value = inputText.value.replace(lastIndex,"")
+    
+    //inputText.value = 
 }
 
 btNums.forEach(el => el.addEventListener("click", (text) => { 
