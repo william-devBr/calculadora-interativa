@@ -1,0 +1,112 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    background-color: black;
+}
+#app {
+    width: 100%;
+    margin:0px auto;
+    max-width: 900px;
+    padding:10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+#calculadora {
+    background-color: darkslategrey;
+    width: 700px;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    height:auto;
+}
+#calculadora h3 {
+    color: #c3c3c3;
+    font-weight: 800;
+    font-family: monospace;
+    margin-bottom: 15px;
+}
+.header-calculdora {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.view-display {
+    width: 100%;
+    max-width: 150px;
+    margin-right: 20px;
+    margin-left: 10px;
+    background-color: black;
+    text-align: right;
+}
+.text-view {
+    color:goldenrod;
+    font-size: 30px;
+    margin-right: 5px;
+    font-family: monospace;
+}
+.display {
+    
+    align-items:center;
+    width: 100%;
+    margin: 0 auto;
+}
+.input-display {
+    justify-content: center;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    text-align: end;
+    font-size: 22px;
+    font-weight: bold;
+}
+.board {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+}
+.board-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    justify-content: center;
+    
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    width: 45px;
+    padding:8px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    background-color: #ebebeb;
+    margin:5px;
+    cursor:pointer;
+}
+.operadores {
+    border-left: 1px solid #ebebeb;
+    
+}
+.operadores .btn {
+    margin-left: 5px;
+}
+.btn-clear {
+    display: flex;
+    flex-direction: column;
+    width: 45px;
+    padding:8px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    background-color: darkorange;
+    margin:5px;
+    cursor:pointer;
+    color:#fff;
+}
